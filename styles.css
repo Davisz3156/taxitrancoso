@@ -184,7 +184,7 @@ ul {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('banner.png');
+    background-image: url('banner.webp');
     background-size: cover;
     background-position: center;
     /* Removido o 'fixed' aqui porque causa bug no iOS/Mobile (imagem some ou fica com zoom infinito) */
