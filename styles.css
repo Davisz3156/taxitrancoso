@@ -18,12 +18,16 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-main);
     color: var(--text-main);
     line-height: 1.6;
-    overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -183,7 +187,8 @@ ul {
     background-image: url('banner.png');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    /* Removido o 'fixed' aqui porque causa bug no iOS/Mobile (imagem some ou fica com zoom infinito) */
+    background-attachment: scroll;
 }
 
 .hero-overlay {
